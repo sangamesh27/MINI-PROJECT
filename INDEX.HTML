@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        How to make image Gallery Using 
+        HTML CSS and Javascript?
+    </title>
+  
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+    <h1></h1>
+    <h6></h6>
+  
+    <div class="myProducts">
+        <div class="myProducts-gallery">
+            <img src="myntra.png"
+
+                alt="click here" 
+                onclick="myImageFunction(this)">
+            <img src="ajio.png"
+
+                alt="click here"
+                onclick="myImageFunction(this)">
+            <img src="flipkart.jfif"
+                alt="click here" 
+                onclick="myImageFunction(this)">
+            <img src="AMAZON.png"
+                alt="click here" 
+                onclick="myImageFunction(this)">
+        </div>
+  
+        <div class="image-container">
+            <img id="img-Box" src="myntra.png"
+
+                alt="click here">
+        </div>
+    </div>
+  
+    <script>
+        function myImageFunction(productSmallImg)
+         {
+            var productFullImg = document.getElementById("img-Box");
+            productFullImg.src = productSmallImg.src;
+        }
+    </script>
+</body>
+  
+</html>
